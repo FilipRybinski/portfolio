@@ -1,0 +1,156 @@
+.content {
+    // padding-top: 100px;
+    margin-left: 2rem;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        display: none;
+        font-size: 4rem;
+        animation: popup2 0.5s 0.5s ease-in-out both;
+    }
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    display: none;
+    animation: popup 0.5s ease-in-out both;
+
+}
+
+.skills-container:hover>:not(:hover) {
+    opacity: 0.4;
+    transform: scale(0.9);
+}
+
+.skill-information {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    img {
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        top: -48px;
+        left: -48px;
+    }
+}
+
+#file {
+    height: 20px;
+
+}
+
+#square {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 16px 14px 20px #0000008c;
+    background: linear-gradient(to left top, var(--bgFirst-color), var(--bgSecond-color)) no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+
+}
+
+#square::before {
+    position: absolute;
+    content: '';
+    background-image: conic-gradient(var(--LitterColor) 60deg, transparent 90deg);
+    width: 300px;
+    height: 300px;
+    animation: rotate 4s linear infinite;
+}
+
+#square::after {
+    position: absolute;
+    content: '';
+    background-image: conic-gradient(var(--LitterColor) 60deg, transparent 90deg);
+    width: 300px;
+    height: 300px;
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+#square span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 25px;
+    background: linear-gradient(to left top, var(--bgFirst-color), var(--bgSecond-color)) no-repeat;
+    z-index: 1;
+    transition: 1s;
+}
+
+#square:hover {
+    transform: translateY(-10px);
+
+}
+
+#square span:hover {
+    box-shadow: inset 16px 14px 20px #0000008c;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popup2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

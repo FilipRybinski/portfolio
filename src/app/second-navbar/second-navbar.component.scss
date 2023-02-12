@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    ul {
+        font-size: 1.2rem;
+        width: calc(100% - 10rem);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+        li {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

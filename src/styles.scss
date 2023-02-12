@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    --bgFirst-color: #4776E6;
+    --bgSecond-color: #8E54E9;
+    --TextColor-color: white;
+    --transition-delay: 1s;
+    --bgThird-color: #FBD786;
+    --LitterColor: #c3002f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: var(--transition-delay);
+    background: linear-gradient(to left top, var(--bgFirst-color), var(--bgSecond-color)) no-repeat;
+    color: var(--TextColor-color);
+}
+
+body.dark {
+    --bgFirst-color: #000428;
+    --bgSecond-color: #004e92;
+    --LitterColor: #FBD786;
+}

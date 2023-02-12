@@ -1,0 +1,59 @@
+.content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    img {
+        z-index: -1;
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        border: 8px solid white;
+    }
+}
+
+.text {
+    position: relative;
+    text-align: left;
+    font-size: 3rem;
+
+    h1 {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:1390px) {
+    .text {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .text {
+        text-align: center;
+        font-size: 2.5rem;
+
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    .text {
+        text-align: center;
+        font-size: 2.1rem;
+
+
+    }
+}
+
+@media screen and (max-width:650px) {
+    .text {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
