@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './skills/skills.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SkillsComponent } from './skills/skills.component';
     ContentComponent,
     SecondNavbarComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    CurriculumComponent,
   ],
   imports: [
     BrowserModule,

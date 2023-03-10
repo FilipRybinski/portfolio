@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+#square {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 16px 14px 20px #0000008c;
+    background: linear-gradient(to left top, var(--bgFirst-color), var(--bgSecond-color)) no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+}
+
+#square::before {
+    position: absolute;
+    content: '';
+    background-image: conic-gradient(var(--LitterColor) 60deg, transparent 90deg);
+    width: 300px;
+    height: 300px;
+    animation: rotate 4s linear infinite;
+}
+
+#square::after {
+    position: absolute;
+    content: '';
+    background-image: conic-gradient(var(--LitterColor) 60deg, transparent 90deg);
+    width: 300px;
+    height: 300px;
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+#square span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 25px;
+    background: linear-gradient(to left top, var(--bgFirst-color), var(--bgSecond-color)) no-repeat;
+    z-index: 1;
+    transition: 1s;
+}
+
+#square a {
+    color: white;
+}
+
+#square:hover {
+    transform: translateY(-10px);
+
+}
+
+#square span:hover {
+    box-shadow: inset 16px 14px 20px #0000008c;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    img {
+        width: 500px;
+    }
+
+}
