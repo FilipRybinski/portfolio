@@ -34,6 +34,13 @@
 }
 
 @media screen and (max-width:1250px) {
+    .content {
+        img {
+            height: 400px;
+            width: 400px;
+        }
+    }
+
     .text {
         text-align: center;
         font-size: 2.5rem;
@@ -43,6 +50,13 @@
 }
 
 @media screen and (max-width:750px) {
+    .content {
+        img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+
     .text {
         text-align: center;
         font-size: 2.1rem;
@@ -52,8 +66,43 @@
 }
 
 @media screen and (max-width:650px) {
+    .content {
+        img {
+            height: 220px;
+            width: 220px;
+        }
+    }
+
     .text {
         text-align: center;
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .content {
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .text {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .content {
+        img {
+            height: 180px;
+            width: 180px;
+        }
+    }
+
+    .text {
+        text-align: center;
+        font-size: 0.7rem;
     }
 }

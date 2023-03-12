@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    min-height: 100vh;
+    min-height: 100svh;
     overflow: hidden;
 }
 
@@ -113,4 +113,11 @@
     transition: 1s;
     opacity: 1;
     visibility: visible;
+}
+
+@media screen and (max-width:400px) {
+    .content {
+        margin-left: 5rem;
+    }
+
 }

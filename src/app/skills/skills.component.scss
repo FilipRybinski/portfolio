@@ -1,7 +1,8 @@
 .content {
     // padding-top: 100px;
-    margin-left: 2rem;
+    // margin-left: 2rem;
     min-height: calc(100vh - 80px);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +44,7 @@
     align-items: center;
     flex-direction: column;
     box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
-    margin: 20px;
+    margin: 50px;
 
     h2 {
         text-transform: uppercase;
@@ -165,4 +166,60 @@
 
 .dot_full {
     background-color: var(--LitterColor);
+}
+
+@media screen and (max-width:630px) {
+    .container {
+        justify-content: center;
+    }
+
+
+    #square {
+        width: 150px;
+        height: 60px;
+
+        span {
+            font-size: 1.3rem;
+            padding-top: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .content {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .skill-information {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .content {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        img {
+            height: 48px;
+            width: 48px;
+            top: -28px;
+            left: -28px;
+
+        }
+    }
+
+    .skill-information {
+        width: 100px;
+        height: 150px;
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100svh - 80px);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -85,6 +85,26 @@
 @media screen and (max-width:1050px) {
     img {
         width: 500px;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .container {
+        justify-content: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    #square {
+        width: 150px;
+        height: 60px;
+
+        span {
+            padding-top: 5px;
+        }
     }
 
 }

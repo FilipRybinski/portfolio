@@ -1,7 +1,7 @@
 .Container {
     position: fixed;
     z-index: 1;
-    height: 100vh;
+    height: 100svh;
     width: 7rem;
     display: flex;
     flex-direction: column;
@@ -135,4 +135,11 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width:400px) {
+    .Container {
+        width: 5rem;
+    }
+
 }
